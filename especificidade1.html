@@ -6,11 +6,26 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        p {
+            background-color: lightblue;
+        }
+
+        .observation {
+            background-color: lightpink;
+            border: dashed 5px;
+            padding: 200px;
+            font-size: 40px;
+        }
+
+        p.observation {
+            background: linear-gradient(to right, green, yellow);
+            padding: 2px;
+        }
     </style>
 </head>
 
 <body>
-    <p class='observacao'>Olha essa observação!!!!</p>
+    <p class='observation'>Olha essa observação!!!!</p>
 </body>
 
 </html>
