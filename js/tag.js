@@ -12,7 +12,7 @@ const colors = {
   form: '#9f6581',
   body: '#25b6da',
   default: '#616161',
-  get(tag) {
+  get (tag) {
     return this[tag] ? this[tag] : this.default
   }
 }
@@ -22,7 +22,7 @@ document.querySelectorAll('.tag').forEach(element => {
 
   element.style.borderColor = colors.get(tagName)
 
-  if(!element.classList.contains('nolabel')) {
+  if (!element.classList.contains('nolabel')) {
     const label = document.createElement('label')
 
     label.style.backgroundColor = colors.get(tagName)
